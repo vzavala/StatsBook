@@ -1,0 +1,12 @@
+Sparse PCA - Version history
+---------------------------------------
+
+V1.0: 
+- initial release
+
+V2.0: 
+- Added deflation scheme to compute multiple principal components
+- Internal runtime and memory optimizations
+- API change: sparsePCA.m now computes multiple components; use computeTradeOffCurve.m to reproduce examples in NIPS paper (see README.md for more details)
+
+

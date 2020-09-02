@@ -18,7 +18,26 @@ plot(datahigh(:,1),'blacko','MarkerFaceColor','w','MarkerSize',4)
 xlabel('Outcome $\omega$','Interpreter','latex','FontSize',14)
 ylabel('$x_\omega$ [bar]','Interpreter','latex','FontSize',14)
 grid on
-% empirical pdf
+
+% compute and plot empirical pdf
+dx=10;
+lb=0;
+ub=0;
+t=60:dx:240;
+x=datahigh(:,1);
+N=length(x);
+
+% compute using indicator
+for i=1:length(t) 
+    f(i)=0;
+    lb(i)=t(i);
+    ub(i)=t(i)+dx;
+    for j=1:N
+        f(i)=f(i)+(x(j)<ub(i) && x(j)>=lb(i));
+    end
+end
+
+% can also automatically visualize empirical pdf using histogram
 subplot(3,1,3)
 histogram(datahigh(:,1),'BinWidth',10,'Normalization','count','EdgeColor','black','FaceColor','none','LineWidth',1)
 xlabel('$x$ [bar]','Interpreter','latex','FontSize',14)
@@ -27,17 +46,16 @@ axis([60 240 0 180])
 grid on
 
 % compute and plot empirical cdf
-t=60:10:240;
-x=datahigh(:,1);
-N=length(x);
+t=60:dx:240;
+
 for i=1:length(t) 
     F(i)=0;
     for j=1:length(x)
-        F(i)=F(i)+(x(j)<=t(i))*(1/N);
+        F(i)=F(i)+(x(j)<=t(i));
     end
 end
 subplot(3,1,2)
-stairs(t,F*N,'LineWidth',1,'Color','black')
+stairs(t,F,'LineWidth',1,'Color','black')
 xlabel('$x$ [bar]','Interpreter','latex','FontSize',14)
 ylabel('$\textrm{Cumulative Freq.}$','Interpreter','latex','FontSize',14)
 title('')
@@ -61,7 +79,7 @@ grid on
 axis([50 250 0 0.02])
 
 subplot(2,2,2)
-stairs(t,F,'LineWidth',1,'Color','black')
+stairs(t,F/N,'LineWidth',1,'Color','black')
 hold on
 plot(x,normcdf(x,param.mu,param.sigma),'black','LineWidth',1.5)
 grid on

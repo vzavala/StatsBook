@@ -7,9 +7,10 @@ clear all
 close all hidden
 
 %reading and converting the image
-inImage=imread('./Data/babyviking.jpg');
-inImage=rgb2gray(inImage);
+inImage=imread('./Data/devilslakeg.jpg');
 inImageD=double(inImage); % this is a matrix!
+
+size(inImageD)
 
 figure;
 imshow(uint8(inImageD));
@@ -55,7 +56,7 @@ for idx=1:length(Nv)
 end
 
 figure(1)
-print -depsc approximation_viking.eps
+print -depsc approximation_lake.eps
 
 % dislay the error graph
 figure(2); 

@@ -1,17 +1,15 @@
 % Victor Z
 % UW-Madison, 2020
 % use Sobel and Gaussian filters
-% https://www.mathworks.com/help/stats/pca.html
 
 clc
 clear all
 close all hidden
 
 %%reading and converting the image
-inImage=imread('./Data/babyviking.jpg');
-inImage=rgb2gray(inImage);
+inImage=imread('./Data/devilslakeg.jpg');
 f=double(inImage); 
-f=f(1:741,1:741);
+
 
 figure(1)
 subplot(2,2,1)

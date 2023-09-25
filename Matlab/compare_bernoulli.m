@@ -22,8 +22,20 @@ end
 
 figure(1)
 
+% generate samples
+S=100;
+X=binornd(1,p,S,1);
+figure(1)
+subplot(2,2,[1 2])
+plot(X,'blacko','MarkerFaceColor','w','MarkerSize',4)
+xlabel('Outcome $\omega$','Interpreter','latex','FontSize',14)
+ylabel('$x_\omega$','Interpreter','latex','FontSize',14)
+grid on
+yticks([-0.5 0 0.5 1 1.5])
+axis([0 S -0.5 1.5])
+
 % visualize pdf
-subplot(2,2,1)
+subplot(2,2,3)
 plot(0*ones(100,1),linspace(0,f(2),100),'black--')
 hold on
 plot(1*ones(100,1),linspace(0,f(3),100),'black--')
@@ -35,7 +47,7 @@ ylabel('$f(x)$','Interpreter','latex','FontSize',14)
 axis([-0.5 1.5 -0.02 1.02])
 
 %visualize cdf
-subplot(2,2,2)
+subplot(2,2,4)
 stairs(t,F,'black-')
 hold on
 for j=1:n

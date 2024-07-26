@@ -8,7 +8,7 @@ addpath('./Support')
 
 % specify mean and covariance 
 mu = [0 0];
-Sigma = [1 -0.7; -0.7 1]; % anticorrelated
+Sigma = [1 -0.5; -0.5 1]; % anticorrelated
 
 % compute the 95% confidence interval ellipse
 alpha = 0.95; % confidence 

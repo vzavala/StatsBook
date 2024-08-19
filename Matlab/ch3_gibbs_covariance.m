@@ -95,10 +95,10 @@ Sig11=Cr(1,1)
 Sig22=Cr(2:5,2:5)
 mu2=mr(2:5)
 mu1=mr(1)
-Sig12=Cr(2:5,1)
-Sig21=Sig12;
+Sig21=Cr(2:5,1)
+Sig12=Sig21';
 x2p=mr(2:5);
 
 %XI|X2
-mu1g2=mu1+Sig12'*inv(Sig22)*(x2p-mu2)
-Sig1g2=Sig11-Sig12'*inv(Sig22)*Sig21
+mu1g2=mu1+Sig12*inv(Sig22)*(x2p-mu2)
+Sig1g2=Sig11-Sig12*inv(Sig22)*Sig21

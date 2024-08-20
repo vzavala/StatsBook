@@ -78,7 +78,7 @@ xlabel('$\omega$ [rad/min]','Interpreter','latex','FontSize',14)
 ylabel('$|y(\omega)|$ [rad/min]','Interpreter','latex','FontSize',14)
 grid on
 legend('Empirical','Model')
-print -depsc c6_sysid_results.eps
+print -depsc ch6_sysid_results.eps
 
 % back calculate parameters 
    V = 10000;        %  cf  (building volume)

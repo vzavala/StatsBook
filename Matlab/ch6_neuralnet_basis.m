@@ -56,7 +56,7 @@ for k=1:data.m
   subplot(3,3,k)
   plot(xv,yn,'black','LineWidth',1.5)
   grid on
-  ylabel('$h_j(a)$','Interpreter','latex','FontSize',14)
+  ylabel('$h(a)$','Interpreter','latex','FontSize',14)
   xlabel('$a$','Interpreter','latex','FontSize',14)
 end
 print -depsc ch6_basis_nn.eps

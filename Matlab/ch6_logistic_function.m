@@ -20,7 +20,7 @@ for k=1:length(theta)
     grid on
     set(gca,'FontSize',14)
     xlabel('$x$','Interpreter','latex','FontSize', 14)
-    ylabel('$g(x,\theta)$','Interpreter','latex','FontSize',14)
+    ylabel('$m(x,\theta)$','Interpreter','latex','FontSize',14)
     axis([-5 5 0 1])
 end
 print -depsc ch6_logistic_function.eps

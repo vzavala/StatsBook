@@ -24,8 +24,9 @@ plot(x,ypred1,'--black','LineWidth',1.5)                                  % mean
 patch([x;flipud(x)],[yint1(:,1);flipud(yint1(:,2))],'k','FaceAlpha',0.1); % CIs
 axis([xlb xub -0.5 1.5])
 grid on
- ylabel('$y$','Interpreter','latex')
-  xlabel('$x$','Interpreter','latex')
+box on
+ ylabel('$y$','Interpreter','latex','FontSize',12)
+  xlabel('$x$','Interpreter','latex','FontSize',12)
 
 %% 4 data points
 xobs = [-1 0 0.5 1]';
@@ -45,8 +46,9 @@ plot(x,ypred1,'--black','LineWidth',1.5)                                  % mean
 patch([x;flipud(x)],[yint1(:,1);flipud(yint1(:,2))],'k','FaceAlpha',0.1); % CIs
 axis([xlb xub -0.5 1.5])
 grid on
- ylabel('$y$','Interpreter','latex')
-  xlabel('$x$','Interpreter','latex')
+box on
+ ylabel('$y$','Interpreter','latex','FontSize',12)
+  xlabel('$x$','Interpreter','latex','FontSize',12)
 
 %% 5 data points
 xobs = [-1 0 0.5 1 0.1]';
@@ -66,8 +68,9 @@ plot(x,ypred1,'--black','LineWidth',1.5)                                  % mean
 patch([x;flipud(x)],[yint1(:,1);flipud(yint1(:,2))],'k','FaceAlpha',0.1); % CIs
 axis([xlb xub -0.5 1.5])
 grid on
- ylabel('$y$','Interpreter','latex')
-  xlabel('$x$','Interpreter','latex')
+box on
+ ylabel('$y$','Interpreter','latex','FontSize',12)
+  xlabel('$x$','Interpreter','latex','FontSize',12)
 
 %% 6 data points
 xobs = [-1 0 0.5 1 0.1 -0.5]';
@@ -87,7 +90,8 @@ plot(x,ypred1,'--black','LineWidth',1.5)                                  % mean
 patch([x;flipud(x)],[yint1(:,1);flipud(yint1(:,2))],'k','FaceAlpha',0.1); % CIs
 axis([xlb xub -0.5 1.5])
 grid on
- ylabel('$y$','Interpreter','latex')
-  xlabel('$x$','Interpreter','latex')
+box on
+ ylabel('$y$','Interpreter','latex','FontSize',12)
+  xlabel('$x$','Interpreter','latex','FontSize',12)
 
-print -depsc ch6_kriging_uq.eps
+print -depsc -r300 ch6_kriging_uq.eps

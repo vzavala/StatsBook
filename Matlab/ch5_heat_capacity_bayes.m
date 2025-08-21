@@ -40,17 +40,15 @@ idxS = randperm(numel(idx));
 X=X(idxS,:);
 Y=Y(idxS);
 
-
-
 %% formulate bayesian estimation problem (full data)
 
 % covariance of the noise
 Sigy=eye(N,N)*sigma^2;
 
-% prior covariance (assume empty)
+% prior covariance 
 Sigp=eye(3,3);
 
-% base estimate (assume empty)
+% base estimate 
 thp=ones(3,1);
 
 % build data structure
@@ -70,13 +68,13 @@ dat.flag=0; %ignores prior
 MSE=msefun(thp,X,Y)
 
 % covariance of estimates
-Sigp=inv(dat.X'*inv(Sigy)*dat.X + inv(Sigp))
+Sig_full=inv(dat.X'*inv(Sigy)*dat.X + inv(Sigp))
 
 
 %% now do recursively 
 
 % batch size
-S=20;
+S=10;
 
 % covariance of the noise
 Sigy=eye(S,S)*sigma^2;

@@ -77,7 +77,7 @@ nnz(k)=sum(abs(thetav(:,k))>1e-4);
 
 end
 
-%% compare fit to model with 3 parameters (keep input variables 1,3,4,5)
+%% compare fit to model with 3 parameters (keep input variables 1,3,4)
 thetasparse=thetav(:,87)
 Xnew=[X(:,1),X(:,3),X(:,4)];
 thetan=(Xnew'*Xnew)\(Xnew'*Y);

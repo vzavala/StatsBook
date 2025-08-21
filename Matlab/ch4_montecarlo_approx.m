@@ -37,7 +37,7 @@ grid on
 subplot(2,2,4)
 plot(Sv,prob,'blacko','MarkerFaceColor','w')
 xlabel('$S$','Interpreter','latex','FontSize',14)
-ylabel('${P}(X>1)$','Interpreter','latex','FontSize',14)
+ylabel('${P}(X\leq 1)$','Interpreter','latex','FontSize',14)
 grid on
 
 print -depsc ch4_convergence_mc.eps

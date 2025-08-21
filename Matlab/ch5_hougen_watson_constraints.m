@@ -3,7 +3,7 @@
 % hougen watson with constraints
 % https://www.mathworks.com/help/stats/rsmdemo.html
 
-clc; clear all; close all hidden; format bank 
+clc; clear all; close all hidden; format long e;
 
 % S = load('reaction');
 % X = S.reactants % experimental reactant concentrations

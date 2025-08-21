@@ -14,7 +14,7 @@ phi=f;
 subplot(2,2,1)
 stairs(t,phi/max(phi),'black','LineWidth',1.5)
 grid on
-ylabel('$\phi(x)$','Interpreter','Latex','FontSize',14)
+ylabel('$\varphi(x)$','Interpreter','Latex','FontSize',14)
 xlabel('$x$','Interpreter','Latex','FontSize',14)
     
 for k=1:3;
@@ -24,7 +24,7 @@ for k=1:3;
     subplot(2,2,k+1)
     plot(t,phi/max(phi),'black','LineWidth',1.5)
     grid on
-    ylabel('$\phi(x)$','Interpreter','Latex','FontSize',14)
+    ylabel('$\varphi(x)$','Interpreter','Latex','FontSize',14)
     xlabel('$x$','Interpreter','Latex','FontSize',14)
 end
 print -depsc ch6_clt_convolutions.eps

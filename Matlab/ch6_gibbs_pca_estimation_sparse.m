@@ -79,7 +79,7 @@ num_comp=6; %number of principal components
 Wsparse = sparsePCA(X, card, num_comp, 0, 1)
 
 % do estimation eliminating variables recommended by sparse PCA (6,3,5). 
-% corresponds to eliminating X2,X4,X5 and keeping one column (row1), X1 (row 2),X3 (row 4)
+% corresponds to eliminating X5,X2,X4 and keeping one column (row1), X1 (row 2),X3 (row 4)
 Xtmp=X;
 X=X(:,[1 2 4]);
 

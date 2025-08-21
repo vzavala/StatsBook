@@ -11,3 +11,5 @@ This material supports the book **"Statistics for Chemical Engineers: From Data 
 - **DataExercises Folder**: Contains data files for exercises in the book.
 
 **Note**: There might be discrepancies in the results obtained with Matlab and Python scripts (due to differences in routines and randomization).
+
+You can **report errors** found in slides and code using this form: [Errata Form](https://forms.gle/rvZoe4FvtrEtnr1G8)

@@ -14,4 +14,4 @@ This material supports the book **"Statistics for Chemical Engineers: From Data 
 
 You can **report errors** found in slides and code using this form: [Errata Form](https://forms.gle/rvZoe4FvtrEtnr1G8)
 
-You can find more information about the book at [Author Website](https://zavalab.engr.wisc.edu/publications/statsbook)
+You can find *more information* about the book at [Author Website](https://zavalab.engr.wisc.edu/publications/statsbook)

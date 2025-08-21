@@ -1,6 +1,6 @@
-# StatsBook
+## Statistics for Chemical Engineers
 
-This material supports Statistics for Chemical Engineers: From Data to Models to Decisions by Zavala, V. M. (2025),©, (Official Website)[https://www.cambridge.org/highereducation/books/statistics-for-chemical-engineers/A8DB49C10B02BADA637D13FC02CD62A7#overview]
+This material supports Statistics for Chemical Engineers: From Data to Models to Decisions by Zavala, V. M. (2025),©, [Official Website](https://www.cambridge.org/highereducation/books/statistics-for-chemical-engineers/A8DB49C10B02BADA637D13FC02CD62A7#overview)
 
 - Matlab Folder: Containts Matlab scripts (and data) for examples in the book.
 

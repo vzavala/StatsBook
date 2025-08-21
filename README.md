@@ -1,6 +1,6 @@
 ## Statistics for Chemical Engineers
 
-This material supports the book **"Statistics for Chemical Engineers: From Data to Models to Decisions"** by Zavala, V. M. (2025),©, [Official Website](https://www.cambridge.org/highereducation/books/statistics-for-chemical-engineers/A8DB49C10B02BADA637D13FC02CD62A7#overview)
+This material supports the book **"Statistics for Chemical Engineers: From Data to Models to Decisions"** by Zavala, V. M. (2025), Cambridge University Press,©, [Official Cambridge Website](https://www.cambridge.org/highereducation/books/statistics-for-chemical-engineers/A8DB49C10B02BADA637D13FC02CD62A7#overview)
 
 - **Slides Folder**: Contains slides summarizing book content.
   
@@ -13,3 +13,5 @@ This material supports the book **"Statistics for Chemical Engineers: From Data 
 **Note**: There might be discrepancies in the results obtained with Matlab and Python scripts (due to differences in routines and randomization).
 
 You can **report errors** found in slides and code using this form: [Errata Form](https://forms.gle/rvZoe4FvtrEtnr1G8)
+
+You can find more information about the book at [Author Website](https://zavalab.engr.wisc.edu/publications/statsbook)

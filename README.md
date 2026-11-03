@@ -2,7 +2,7 @@
 
 This material supports the book **"Statistics for Chemical Engineers: From Data to Models to Decisions"** by Zavala, V. M. (2025), Cambridge University Press,©, [Official Cambridge Website](https://www.cambridge.org/highereducation/books/statistics-for-chemical-engineers/A8DB49C10B02BADA637D13FC02CD62A7#overview)
 
-- **Slides Folder**: Contains slides summarizing book content, and 4-up handouts (`*_4up.pdf`, four slides per page).
+- **Slides Folder**: Contains slides summarizing book content, and 4-up handouts in `Slides/handouts` (`*_4up.pdf`, four slides per page).
   
 - **Matlab Folder**: Containts Matlab scripts (and data) for examples in the book.
 

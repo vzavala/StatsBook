@@ -12,6 +12,8 @@ This material supports the book **"Statistics for Chemical Engineers: From Data 
 
 **Note**: There might be discrepancies in the results obtained with Matlab and Python scripts (due to differences in routines and randomization).
 
+**Note**: The slides were corrected in November 2026; where they differ from the printed book, the correction is listed in the book errata (see the [Author Website](https://zavalab.engr.wisc.edu/publications/statsbook)).
+
 You can **report errors** found in slides and code using this form: [Errata Form](https://forms.gle/rvZoe4FvtrEtnr1G8)
 
 You can find *more information* about the book at [Author Website](https://zavalab.engr.wisc.edu/publications/statsbook)

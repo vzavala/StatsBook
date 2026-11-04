@@ -6,6 +6,8 @@ This material supports the book **"Statistics for Chemical Engineers: From Data 
   
 - **Matlab Folder**: Containts Matlab scripts (and data) for examples in the book.
 
+- **Matlab-Live Folder**: Contains Matlab live scripts (`.mlx`) for examples in the book, with notes and results.
+
 - **Python Folder**: Contains Python scripts (and data) for examples in the book.
 
 - **DataExercises Folder**: Contains data files for exercises in the book.
